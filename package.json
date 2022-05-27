@@ -1,0 +1,47 @@
+{
+  "name": "placemark_hapi",
+  "version": "1.0.0",
+  "description": "A point of interest web application",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "npx nodemon src/server.js  --ignore 'src/models/json/*.json'",
+    "lint": "npx eslint . --ext .js",
+    "test": "npx mocha --ui tdd test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Berncat/Placemark_hapi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Berncat/Placemark_hapi/issues"
+  },
+  "homepage": "https://github.com/Berncat/Placemark_hapi#readme",
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "chai": "^4.3.6",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.0",
+    "@hapi/cookie": "^11.0.2",
+    "@hapi/hapi": "^20.2.2",
+    "@hapi/inert": "^6.0.5",
+    "@hapi/vision": "^6.1.0",
+    "dotenv": "^16.0.1",
+    "handlebars": "^4.7.7",
+    "hapi-auth-jwt2": "^10.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mais-mongoose-seeder": "^1.0.7",
+    "mongoose": "^6.3.4"
+  }
+}
