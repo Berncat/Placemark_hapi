@@ -1,0 +1,27 @@
+<form action="/dashboard/edit/{{category._id}}" method="POST" class="panel">
+  <div class="panel-heading pr-3">
+    <nav class="level">
+      <!-- Left side -->
+      <div class="level-left">Edit Category</div>
+      <!-- Right side -->
+      <div class="level-right">
+        <a href="/dashboard" class="button is-dark">Back to view Categories</a>
+      </div>
+    </nav>
+  </div>
+  <div class="field-body panel-block">
+    <div class="field">
+      <label class="label">Edit Name</label>
+      <input class="input" type="text" value="{{category.name}}" name="name" />
+    </div>
+    <div class="field">
+      <label class="label">Edit Filter Name</label>
+      <input class="input" type="text" value="{{category.filter}}" name="filter" />
+    </div>
+  </div>
+  <div class="panel-block">
+    <button class="button is-info is-fullwidth">
+      Submit
+    </button>
+  </div>
+</form>

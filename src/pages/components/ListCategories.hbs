@@ -1,0 +1,40 @@
+<nav class="panel">
+  <div class="panel-heading pr-3">
+    <nav class="level">
+      <!-- Left side -->
+      <div class="level-left">
+        Categories
+      </div>
+      <!-- Right side -->
+      <div class="level-right">
+        <a href="/dashboard/add" class="button is-dark">Add New Category</a>
+      </div>
+    </nav>
+  </div>
+  {{#each categories}}
+    <div class="panel-block is-block pr-3">
+      <nav class="level">
+        <!-- Left side -->
+        <div class="level-left">
+          <span class="icon-text">
+            <span class="icon">
+              <i style="color:hsl(204, 86%, 53%);" class="fas fa-map-marker-alt"></i>
+            </span>
+            <span>
+              <p class="title is-5">{{name}}</p>
+              <p class="subtitle is-6"><i>Filter Name: {{filter}}</i></p>
+            </span>
+          </span>
+        </div>
+        <!-- Right side -->
+        <div class="level-right">
+          <p class="buttons">
+            <a href="#" class="button is-info">View</a>
+            <a href="/dashboard/edit/{{_id}}" class="button is-success">Edit</a>
+            <a href="/dashboard/delete/{{_id}}" class="button is-danger">Delete</a>
+          </p>
+        </div>
+      </nav>
+    </div>
+  {{/each}}
+</nav>

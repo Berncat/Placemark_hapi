@@ -10,7 +10,11 @@ export const webRoutes = [
   { method: "POST", path: "/authenticate", config: accountsController.login },
 
   { method: "GET", path: "/dashboard", config: dashboardController.index },
-  { method: "POST", path: "/dashboard", config: dashboardController.action },
+  { method: "GET", path: "/dashboard/add", config: dashboardController.newCategory },
+  { method: "POST", path: "/dashboard/add", config: dashboardController.addCategory },
+  { method: "GET", path: "/dashboard/delete/{id}", config: dashboardController.deleteCategory },
+  { method: "GET", path: "/dashboard/edit/{id}", config: dashboardController.viewCategory },
+  { method: "POST", path: "/dashboard/edit/{id}", config: dashboardController.editCategory },
   { method: "GET", path: "/report", config: dashboardController.report },
 
   {

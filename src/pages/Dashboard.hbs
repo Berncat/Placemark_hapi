@@ -1,6 +1,9 @@
 {{> TitleBar}}
 {{> MainNavigator active="dashboard" }}
-{{> Form}}
-<figure class="image is-fullwidth">
-  <img src="images/placeholder.jpg"/>
-</figure>
+  {{#if add}}
+    {{> AddCategory}}
+  {{else if edit}}
+    {{> EditCategory}}
+  {{else}}
+    {{> ListCategories}}
+  {{/if}}

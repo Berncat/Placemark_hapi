@@ -19,7 +19,9 @@ suite("User API tests", () => {
     await placemarkService.createUser(maggie);
     await placemarkService.authenticate(maggieCredentials);
   });
-  teardown(async () => {});
+  teardown(async () => {
+    await placemarkService.deleteAllUsers();
+  });
 
   test("create a user", async () => {
     const newUser = await placemarkService.createUser(maggie);
@@ -44,7 +46,7 @@ suite("User API tests", () => {
 
   test("get a user - bad id", async () => {
     try {
-      const returnedUser = await placemarkService.getUser("1234");
+      await placemarkService.getUser("1234");
       assert.fail("Should not return a response");
     } catch (error) {
       assert(error.response.data.message === "No User with this id");

@@ -18,7 +18,7 @@ export const placemarkService = {
     try {
       const res = await axios.get(`${this.placemarkUrl}/api/users`);
       return res.data;
-    } catch (e) {
+    } catch (error) {
       return null;
     }
   },
@@ -36,5 +36,40 @@ export const placemarkService = {
 
   async clearAuth() {
     axios.defaults.headers.common.Authorization = "";
+  },
+
+  async getAllCategories() {
+    const res = await axios.get(`${this.placemarkUrl}/api/categories`);
+    return res.data;
+  },
+
+  async getCategory(id) {
+    const res = await axios.get(`${this.placemarkUrl}/api/categories/${id}`);
+    return res.data;
+  },
+
+  async getCategoriesByUser(id) {
+    const res = await axios.get(`${this.placemarkUrl}/api/categories/user/${id}`);
+    return res.data;
+  },
+
+  async createCategory(id, category) {
+    const res = await axios.post(`${this.placemarkUrl}/api/categories/user/${id}`, category);
+    return res.data;
+  },
+
+  async editCategory(id, updatedCategory) {
+    const res = await axios.post(`${this.placemarkUrl}/api/categories/${id}`, updatedCategory);
+    return res.data;
+  },
+
+  async deleteCategory(id) {
+    const res = await axios.delete(`${this.placemarkUrl}/api/categories/${id}`);
+    return res;
+  },
+
+  async deleteAllCategories() {
+    const res = await axios.delete(`${this.placemarkUrl}/api/categories`);
+    return res.data;
   },
 };
