@@ -1,15 +1,15 @@
 import Boom from "@hapi/boom";
 import { db } from "../models/db.js";
 
-export const categoriesApi = {
+export const placemarksApi = {
   find: {
     auth: {
       strategy: "jwt",
     },
     handler: async function (request, h) {
       try {
-        const categories = await db.categoryStore.getAllCategories();
-        return categories;
+        const placemarks = await db.placemarkStore.getAllPlacemarks();
+        return placemarks;
       } catch (err) {
         return Boom.serverUnavailable("Database Error");
       }
@@ -22,11 +22,11 @@ export const categoriesApi = {
     },
     handler: async function (request, h) {
       try {
-        const category = await db.categoryStore.getCategoryById(request.params.id);
-        if (!category) {
-          return Boom.notFound("No Category with this id");
+        const placemark = await db.placemarkStore.getPlacemarkById(request.params.id);
+        if (!placemark) {
+          return Boom.notFound("No Placemark with this id");
         }
-        return category;
+        return placemark;
       } catch (err) {
         return Boom.serverUnavailable("Database Error");
       }
@@ -43,8 +43,8 @@ export const categoriesApi = {
         if (!user) {
           return Boom.notFound("No User with this id");
         }
-        const categories = await db.categoryStore.getUserCategories(request.params.id);
-        return categories;
+        const placemarks = await db.placemarkStore.getPlacemarksByUserId(request.params.id);
+        return placemarks;
       } catch (err) {
         return Boom.serverUnavailable("Database Error");
       }
@@ -57,17 +57,26 @@ export const categoriesApi = {
     },
     handler: async function (request, h) {
       try {
-        const category = request.payload;
-        category.userId = request.params.id;
+        if (request.payload.filter === "other") {
+          request.payload.filter = request.payload.other;
+        }
+        delete request.payload.other;
+        const placemark = request.payload;
+        placemark.userId = request.params.id;
+        placemark.categoryId = request.params.cId;
         const user = await db.userStore.getUserById(request.params.id);
         if (!user) {
           return Boom.notFound("No User with this id");
         }
-        const newCategory = await db.categoryStore.addCategory(category);
-        if (newCategory) {
-          return h.response(newCategory).code(201);
+        const category = await db.categoryStore.getCategoryById(request.params.cId);
+        if (!category) {
+          return Boom.notFound("No Category with this id");
         }
-        return Boom.badImplementation("error creating category");
+        const newPlacemark = await db.placemarkStore.addPlacemark(placemark);
+        if (newPlacemark) {
+          return h.response(newPlacemark).code(201);
+        }
+        return Boom.badImplementation("error creating placemark");
       } catch (err) {
         return Boom.serverUnavailable("Database Error");
       }
@@ -80,15 +89,19 @@ export const categoriesApi = {
     },
     handler: async function (request, h) {
       try {
-        const category = await db.categoryStore.getCategoryById(request.params.id);
-        const updatedCategory = await db.categoryStore.editCategory(request.params.id, request.payload);
-        if (!category) {
-          return Boom.notFound("No Category with this id");
+        if (request.payload.filter === "other") {
+          request.payload.filter = request.payload.other;
         }
-        if (updatedCategory) {
-          return h.response(updatedCategory).code(201);
+        delete request.payload.other;
+        const placemark = await db.placemarkStore.getPlacemarkById(request.params.id);
+        const updatedPlacemark = await db.placemarkStore.editPlacemark(request.params.id, request.payload);
+        if (!placemark) {
+          return Boom.notFound("No Placemark with this id");
         }
-        return Boom.badImplementation("error editing category");
+        if (updatedPlacemark) {
+          return h.response(updatedPlacemark).code(201);
+        }
+        return Boom.badImplementation("error editing placemark");
       } catch (err) {
         return Boom.serverUnavailable("Database Error");
       }
@@ -101,12 +114,11 @@ export const categoriesApi = {
     },
     handler: async function (request, h) {
       try {
-        const category = await db.categoryStore.getCategoryById(request.params.id);
-        if (!category) {
-          return Boom.notFound("No Category with this id");
+        const placemark = await db.placemarkStore.getPlacemarkById(request.params.id);
+        if (!placemark) {
+          return Boom.notFound("No Placemark with this id");
         }
-        await db.placemarkStore.deleteCategoryPlacemarks(category._id)
-        await db.categoryStore.deleteCategoryById(category._id);
+        await db.placemarkStore.deletePlacemarkById(placemark._id);
         return h.response().code(204);
       } catch (err) {
         return Boom.serverUnavailable("Database Error");
@@ -121,7 +133,6 @@ export const categoriesApi = {
     handler: async function (request, h) {
       try {
         await db.placemarkStore.deleteAll();
-        await db.categoryStore.deleteAll();
         return h.response().code(204);
       } catch (err) {
         return Boom.serverUnavailable("Database Error");

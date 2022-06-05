@@ -4,6 +4,12 @@
     {{> AddCategory}}
   {{else if edit}}
     {{> EditCategory}}
+  {{else if view}}
+    {{> ListPlacemarks}}
+  {{else if addPM}}
+    {{> AddPlacemark}}
+  {{else if editPM}}
+    {{> EditPlacemark}}
   {{else}}
     {{> ListCategories}}
   {{/if}}

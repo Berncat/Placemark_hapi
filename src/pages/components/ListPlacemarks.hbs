@@ -1,0 +1,71 @@
+<nav class="panel">
+  <div class="panel-heading pr-3">
+    <nav class="level">
+      <!-- Left side -->
+      <div class="level-left">
+        <div class="level-item">
+          {{title}}
+        </div>
+        <div class="level-item">
+          <a href="/category/{{category._id}}/add" class="button is-dark is-outlined">
+            <span class="icon">
+              <i class="fas fa-plus"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- Right side -->
+      <div class="level-right">
+        <div class="level-item">
+          <p class="title is-6">Filter:</p>
+        </div>
+        <div class="level-item">
+          {{> Dropdown}}
+        </div>
+        <div class="level-item">
+          <a href="/dashboard" class="button is-dark">Back to view Categories</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="panel-block">
+    <table class="table is-striped is-fullwidth">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+          <th>Description</th>
+          <th>{{category.filter}}</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each category.placemarks}}
+          <tr>
+            <td>{{name}}</td>
+            <td>{{lat}}</td>
+            <td>{{lon}}</td>
+            <td>{{desc}}</td>
+            <td>{{filter}}</td>
+            <td>
+              <a href="/category/{{categoryId}}/edit/{{_id}}" class="button is-success">
+                <span class="icon is-small">
+                  <i class="fas fa-edit"></i>
+                </span>
+              </a>
+            </td>
+            <td>
+              <a href="/category/{{categoryId}}/delete/{{_id}}" class="button is-danger">
+                <span class="icon is-small">
+                  <i class="fas fa-trash"></i>
+                </span>
+              </a>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</nav>

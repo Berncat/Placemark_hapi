@@ -1,4 +1,5 @@
 import { Category } from "./category.js";
+import { placemarkMongoStore } from "./placemark-mongo-store.js";
 
 export const categoryMongoStore = {
   async getAllCategories() {
@@ -9,6 +10,10 @@ export const categoryMongoStore = {
   async getCategoryById(id) {
     if (id) {
       const category = await Category.findOne({ _id: id }).lean();
+      if (category) {
+        category.placemarks = await placemarkMongoStore.getPlacemarksByCategoryId(category._id);
+        category.filterList = await placemarkMongoStore.getFilterList(category._id);
+      }
       return category;
     }
     return null;
@@ -17,10 +22,15 @@ export const categoryMongoStore = {
   async getUserCategories(id) {
     if (id) {
       const categories = await Category.find({ userId: id }).lean();
+      await Promise.all(categories.map(async (category) => {
+        category.filterList = await placemarkMongoStore.getFilterList(category._id);
+        return categories;
+      }));
       return categories;
     }
     return null;
   },
+
 
   async addCategory(category) {
     const newCategory = new Category(category);

@@ -3,16 +3,24 @@
     <nav class="level">
       <!-- Left side -->
       <div class="level-left">
-        Categories
+        <div class="level-item">
+          Categories
+        </div>
+        <div class="level-item">
+          <a href="/dashboard/add" class="button is-dark is-outlined">
+            <span class="icon">
+              <i class="fas fa-plus"></i>
+            </span>
+          </a>
+        </div>
       </div>
       <!-- Right side -->
       <div class="level-right">
-        <a href="/dashboard/add" class="button is-dark">Add New Category</a>
       </div>
     </nav>
   </div>
   {{#each categories}}
-    <div class="panel-block is-block pr-3">
+    <div class="panel-block is-block">
       <nav class="level">
         <!-- Left side -->
         <div class="level-left">
@@ -29,9 +37,21 @@
         <!-- Right side -->
         <div class="level-right">
           <p class="buttons">
-            <a href="#" class="button is-info">View</a>
-            <a href="/dashboard/edit/{{_id}}" class="button is-success">Edit</a>
-            <a href="/dashboard/delete/{{_id}}" class="button is-danger">Delete</a>
+            <a href="/category/{{_id}}" class="button is-success">
+              <span class="icon">
+                <i class="fas fa-eye"></i>
+              </span>
+            </a>
+            <a href="/dashboard/edit/{{_id}}" class="button is-info">
+              <span class="icon">
+                <i class="fas fa-edit"></i>
+              </span>
+            </a>
+            <a href="/dashboard/delete/{{_id}}" class="button is-danger">
+              <span class="icon">
+                <i class="fas fa-trash"></i>
+              </span>
+            </a>
           </p>
         </div>
       </nav>

@@ -10,6 +10,7 @@
     "lint": "npx eslint . --ext .js",
     "test": "npx mocha --ui tdd test/**/*.js",
     "testapiauth": "npx mocha --ui tdd test/api/auth-test.js",
+    "testapiplacemarks": "npx mocha --ui tdd test/api/placemarks-api-test.js",
     "testapicategories": "npx mocha --ui tdd test/api/categories-api-test.js",
     "testapiusers": "npx mocha --ui tdd test/api/users-api-test.js"
   },

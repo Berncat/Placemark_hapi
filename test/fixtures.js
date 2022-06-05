@@ -57,3 +57,45 @@ export const updatedCategory = {
   name: "Test Category 5",
   filter: "Test Category 5 Filter",
 };
+
+export const testPlacemarks = [
+  {
+    name: "Test Placemark 1",
+    lon: 1,
+    lat: 2,
+    desc: "Desc 1",
+    filter: "filter 1",
+  },
+  {
+    name: "Test Placemark 2",
+    lon: 3,
+    lat: 4,
+    desc: "Desc 2",
+    filter: "filter 2",
+  },
+  {
+    name: "Test Placemark 3",
+    lon: 5,
+    lat: 6,
+    desc: "Desc 3",
+    filter: "other",
+    other: "filter 3",
+  },
+];
+
+export const testPlacemark = {
+  name: "Test Placemark 4",
+  lon: 7,
+  lat: 8,
+  desc: "Desc 4",
+  filter: "filter 4",
+};
+
+export const updatedPlacemark = {
+  name: "Test Placemark 5",
+  lon: 9,
+  lat: 10,
+  desc: "Desc 5",
+  filter: "other",
+  other: "filter 5",
+};

@@ -1,0 +1,22 @@
+<form class="mb-0" action="/filter" method="POST">
+  <div class="field has-addons">
+    <input type="hidden" name="id" value={{category._id}} />
+    <div class="control">
+      <div class="select">
+        <select name="filter">
+          {{#each category.filterList}}
+            <option value="{{this}}">{{this}}</option>
+          {{/each}}
+            <option value="clear">Clear Filter</option>
+        </select>
+      </div>
+    </div>
+    <div class="control">
+      <button class="button is-info">
+        <span class="icon is-small">
+          <i class="fas fa-filter"></i>
+        </span>
+      </button>
+    </div>
+  </div>
+</form>

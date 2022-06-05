@@ -1,5 +1,6 @@
 import { accountsController } from "./controllers/accounts-controller.js";
 import { dashboardController } from "./controllers/dashboard-controller.js";
+import { categoryController } from "./controllers/category-controller.js";
 
 export const webRoutes = [
   { method: "GET", path: "/", config: accountsController.index },
@@ -15,7 +16,15 @@ export const webRoutes = [
   { method: "GET", path: "/dashboard/delete/{id}", config: dashboardController.deleteCategory },
   { method: "GET", path: "/dashboard/edit/{id}", config: dashboardController.viewCategory },
   { method: "POST", path: "/dashboard/edit/{id}", config: dashboardController.editCategory },
-  { method: "GET", path: "/report", config: dashboardController.report },
+
+  { method: "GET", path: "/category/{id}", config: categoryController.index },
+  { method: "GET", path: "/category/{id}/filter/{filter}", config: categoryController.filter },
+  { method: "POST", path: "/filter", config: categoryController.filter },
+  { method: "GET", path: "/category/{id}/add", config: categoryController.newPlacemark },
+  { method: "POST", path: "/category/{id}/add", config: categoryController.addPlacemark },
+  { method: "GET", path: "/category/{id}/delete/{pmId}", config: categoryController.deletePlacemark },
+  { method: "GET", path: "/category/{id}/edit/{pmId}", config: categoryController.viewPlacemark },
+  { method: "POST", path: "/category/{id}/edit/{pmId}", config: categoryController.editPlacemark },
 
   {
     method: "GET",

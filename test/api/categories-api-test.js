@@ -14,7 +14,6 @@ suite("Categories API tests", () => {
     await placemarkService.authenticate(maggie);
     await placemarkService.deleteAllCategories();
     for (let i = 0; i < testCategories.length; i += 1) {
-      testCategories[i].userId = maggie._id;
       // eslint-disable-next-line no-await-in-loop
       await placemarkService.createCategory(user._id, testCategories[i]);
     }

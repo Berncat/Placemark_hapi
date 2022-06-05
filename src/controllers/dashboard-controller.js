@@ -9,8 +9,6 @@ export const dashboardController = {
         title: "Dashboard",
         user: loggedInUser,
         categories: categories,
-        add: false,
-        edit: false,
       };
       return h.view("Dashboard", viewData);
     },
@@ -39,6 +37,7 @@ export const dashboardController = {
       const loggedInUser = request.auth.credentials;
       const flag = await db.categoryStore.checkUser(loggedInUser, category);
       if (flag) {
+        await db.placemarkStore.deleteCategoryPlacemarks(category._id)
         await db.categoryStore.deleteCategoryById(category._id);
         return h.redirect("/dashboard");
       }
@@ -52,8 +51,7 @@ export const dashboardController = {
       const loggedInUser = request.auth.credentials;
       const flag = await db.categoryStore.checkUser(loggedInUser, category);
       if (flag) {
-        const edit = true;
-        return h.view("Dashboard", { category: category, edit: edit, user: loggedInUser });
+        return h.view("Dashboard", { title: category.name, category: category, edit: true, user: loggedInUser });
       }
       return h.redirect("/logout");
     },
@@ -70,16 +68,6 @@ export const dashboardController = {
         return h.redirect("/dashboard");
       }
       return h.redirect("/logout");
-    },
-  },
-
-  report: {
-    handler: async function (request, h) {
-      const loggedInUser = request.auth.credentials;
-      return h.view("Report", {
-        title: "Report",
-        user: loggedInUser,
-      });
     },
   },
 };
