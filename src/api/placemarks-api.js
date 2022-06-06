@@ -62,22 +62,24 @@ export const placemarksApi = {
         }
         delete request.payload.other;
         const placemark = request.payload;
+        const category = await db.categoryStore.getCategoryById(request.params.cId);
+        const user = await db.userStore.getUserById(request.params.id);
         placemark.userId = request.params.id;
         placemark.categoryId = request.params.cId;
-        const user = await db.userStore.getUserById(request.params.id);
         if (!user) {
           return Boom.notFound("No User with this id");
         }
-        const category = await db.categoryStore.getCategoryById(request.params.cId);
         if (!category) {
           return Boom.notFound("No Category with this id");
         }
+        placemark.categoryName = category.name;
         const newPlacemark = await db.placemarkStore.addPlacemark(placemark);
         if (newPlacemark) {
           return h.response(newPlacemark).code(201);
         }
         return Boom.badImplementation("error creating placemark");
       } catch (err) {
+        console.log(err)
         return Boom.serverUnavailable("Database Error");
       }
     },

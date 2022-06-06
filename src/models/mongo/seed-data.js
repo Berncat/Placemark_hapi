@@ -36,6 +36,7 @@ export const seedData = {
       desc: "Athenry AWS is situated within the grounds of Teagasc, Athenry, Co Galway and was installed in 2010. Daily rainfall readings were taken at Athenry from 1944 to 1975",
       filter: "AWS",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark2: {
@@ -45,6 +46,7 @@ export const seedData = {
       desc: "Ballyhaise AWS is situated within the grounds of Teagasc, Ballyhaise, Co Cavan and was installed in 2003. The station replaced a synoptic station which closed at Clones, Co Monaghan in 2008. A manual climate station taking daily measurements was situated within the college from 1932 to 2005",
       filter: "AWS",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark3: {
@@ -54,6 +56,7 @@ export const seedData = {
       desc: "The station opened in September 1956. It replaced the station at Blacksod Lighthouse, 10 miles to the SW, which was run by the Sweeney family. It was from Blacksod that the observation, which finally determined the date of the D-Day landings in June 1944, emanated. The station is regarded as being particularly important because of its location on the western fringe of Europe. In 2012, the manual station was replaced by an AWS situated on the same site",
       filter: "AWS",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark4: {
@@ -63,6 +66,7 @@ export const seedData = {
       filter: "AWS",
       desc: "Oak Park AWS is situated within the grounds of Teagasc, Oak Park, Co Carlow. The AWS was installed in 2003 and replaced a manual climate station which has taken daily readings since 1957",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark5: {
@@ -72,6 +76,7 @@ export const seedData = {
       filter: "AWS",
       desc: "The station opened on the 9th November 1943 as a fully manned synoptic station. The manual station was replaced by an AGI automatic station in 1996. The station at Claremorris was officially closed on 1st November 2010 and was replaced by a TUCSON* Automatic Weather Station at the same location from January 1, 2010",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark6: {
@@ -81,6 +86,7 @@ export const seedData = {
       filter: "AWS",
       desc: "The AWS is situated within the grounds of Teasgasc Grange, Boycetown, Co Meath. The present station was commissioned in 2006 replacing a manual climate station which was installed in 1963",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark7: {
@@ -90,6 +96,7 @@ export const seedData = {
       filter: "AWS",
       desc: "Moore Park AWS is situated within the grounds of Teagasc, Moore Park, Co Cork and was installed in 2003. The station replaced a manual station which was situated on the site since 1961",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark8: {
@@ -99,6 +106,7 @@ export const seedData = {
       filter: "AWS",
       desc: "The current automatic weather station (AWS) was installed in Finner Army camp, Ballyshannon, Co. Donegal on the 1st November 2010. It replaced an existing AWS which had taken measurements since April 1996",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark9: {
@@ -108,6 +116,7 @@ export const seedData = {
       filter: "AWS",
       desc: "Gurteen AWS was opened in the grounds of Gurteen Agricultural College, Co Tipperary in April 2008. The station was opened as a replacement to Birr Synoptic station which officially closed on the 1st January 2009",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark10: {
@@ -117,6 +126,7 @@ export const seedData = {
       filter: "AWS",
       desc: "Johnstown Castle AWS is situated within the grounds of Teagasc, Johnstown Castle, Co Wexford. An initial AWS was installed in 2003 and replaced a manual station which had taken daily measurements since 1914. Due to anthropogenic developments impacting on exposure the AWS was moved to a new location within the Teagasc grounds in 2009",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark11: {
@@ -126,6 +136,7 @@ export const seedData = {
       filter: "AWS",
       desc: "The AWS at Mace Head is situated within the grounds of the NUI , Galway research centre near Carna, Co Galway. The station was installed in 2003",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark12: {
@@ -135,6 +146,7 @@ export const seedData = {
       filter: "AWS",
       desc: "Malin Head synoptic weather station is situated at the most northerly point on the island of Ireland, at the top of the Inishowen peninsula in County Donegal. The nearest town is Carndonagh, which is 19 Km south southeast of the station",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark13: {
@@ -144,6 +156,7 @@ export const seedData = {
       filter: "AWS",
       desc: "Markree Castle AWS is situated close to Markree Castle, Co Sligo.. The present station was commissioned in 2005 replacing a manual climate station which measured daily temperature and rainfall from 1860 to 1998. Due to site exposure, wind in not measured at the station",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark14: {
@@ -153,6 +166,7 @@ export const seedData = {
       filter: "AWS",
       desc: "The AWS is situated on Bord Na Mona land north of Lanesborough. It was installed in September 2003",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark15: {
@@ -162,6 +176,7 @@ export const seedData = {
       filter: "AWS",
       desc: "Mullingar AWS is situated to the west of Mullingar, Co. Westmeath. The station was automated in 1998",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark16: {
@@ -171,6 +186,7 @@ export const seedData = {
       filter: "AWS",
       desc: "Newport (Furness) AWS is situated within the Marine Institute research centre to the North-West of Newport, Co Mayo. The station is positioned on an isthmus separating Lough Feegh (fresh water) and Furness Lough (salt water) .The present station was commissioned in January 2005 replacing a daily manual climate station which was installed in 1959",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark17: {
@@ -180,6 +196,7 @@ export const seedData = {
       filter: "AWS",
       desc: "The Phoenix Park AWS is situated within the grounds of the Ordnance Survey of Ireland in the Phoenix Park, Dublin. The current station was installed in 2003 and replaced a manual climate which was established in 1829",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark18: {
@@ -189,6 +206,7 @@ export const seedData = {
       filter: "AWS",
       desc: "Roches Point AWS is situated in the south eastern tip of Cork Harbour. The present station was commissioned in 2004 replacing an older AWS which was installed in 1991. Prior to this, Roches Point was a fully manned synoptic station measuring hourly data since 194",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark19: {
@@ -198,6 +216,7 @@ export const seedData = {
       filter: "AWS",
       desc: "Sherkin Island AWS is situated within the grounds of the Sherkin Island Marine Station, Co Cork. The island is situated approximately 2 km off the west Cork village of Baltimore. The station is situated on north-west end of the island and was commissioned in 2004. A manual climate station measuring daily rainfall and temperature was installed in 1972 and remains open",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark20: {
@@ -207,6 +226,7 @@ export const seedData = {
       filter: "AWS",
       desc: "Valentia Observatory is part of Met Éireann, the Irish Meteorological Service. It is located one kilometre west of the town of Cahirciveen, on the estuary of the Feartha river",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark21: {
@@ -216,6 +236,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark22: {
@@ -225,6 +246,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark23: {
@@ -234,6 +256,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark24: {
@@ -243,6 +266,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark25: {
@@ -252,6 +276,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark26: {
@@ -261,6 +286,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark27: {
@@ -270,6 +296,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark28: {
@@ -279,6 +306,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark29: {
@@ -288,6 +316,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark30: {
@@ -297,6 +326,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark31: {
@@ -306,6 +336,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark32: {
@@ -315,6 +346,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark33: {
@@ -324,6 +356,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark34: {
@@ -333,6 +366,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark35: {
@@ -342,6 +376,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark36: {
@@ -351,6 +386,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark37: {
@@ -360,6 +396,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark38: {
@@ -369,6 +406,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark39: {
@@ -378,6 +416,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark40: {
@@ -387,6 +426,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark41: {
@@ -396,6 +436,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark42: {
@@ -405,6 +446,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark43: {
@@ -414,6 +456,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark44: {
@@ -423,6 +466,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark45: {
@@ -432,6 +476,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark46: {
@@ -441,6 +486,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark47: {
@@ -450,6 +496,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark48: {
@@ -459,6 +506,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark49: {
@@ -468,6 +516,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark50: {
@@ -477,6 +526,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark51: {
@@ -486,6 +536,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark52: {
@@ -495,6 +546,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark53: {
@@ -504,6 +556,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark54: {
@@ -513,6 +566,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark55: {
@@ -522,6 +576,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark56: {
@@ -531,6 +586,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark57: {
@@ -540,6 +596,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark58: {
@@ -549,6 +606,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark59: {
@@ -558,6 +616,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark60: {
@@ -567,6 +626,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark61: {
@@ -576,6 +636,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark62: {
@@ -585,6 +646,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark63: {
@@ -594,6 +656,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark64: {
@@ -603,6 +666,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark65: {
@@ -612,6 +676,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark66: {
@@ -621,6 +686,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark67: {
@@ -630,6 +696,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark68: {
@@ -639,6 +706,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark69: {
@@ -648,6 +716,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark70: {
@@ -657,6 +726,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark71: {
@@ -666,6 +736,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark72: {
@@ -675,6 +746,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark73: {
@@ -684,6 +756,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark74: {
@@ -693,6 +766,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark75: {
@@ -702,6 +776,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark76: {
@@ -711,6 +786,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark77: {
@@ -720,6 +796,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark78: {
@@ -729,6 +806,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark79: {
@@ -738,6 +816,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark80: {
@@ -747,6 +826,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark81: {
@@ -756,6 +836,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark82: {
@@ -765,6 +846,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark83: {
@@ -774,6 +856,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark84: {
@@ -783,6 +866,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark85: {
@@ -792,6 +876,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark86: {
@@ -801,6 +886,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark87: {
@@ -810,6 +896,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark88: {
@@ -819,6 +906,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark89: {
@@ -828,6 +916,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark90: {
@@ -837,6 +926,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark91: {
@@ -846,6 +936,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark92: {
@@ -855,6 +946,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark93: {
@@ -864,6 +956,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark94: {
@@ -873,6 +966,7 @@ export const seedData = {
       filter: "ACS",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark95: {
@@ -882,6 +976,7 @@ export const seedData = {
       filter: "NI",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark96: {
@@ -891,6 +986,7 @@ export const seedData = {
       filter: "NI",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark97: {
@@ -900,6 +996,7 @@ export const seedData = {
       filter: "NI",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark98: {
@@ -909,6 +1006,7 @@ export const seedData = {
       filter: "NI",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark99: {
@@ -918,6 +1016,7 @@ export const seedData = {
       filter: "NI",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark100: {
@@ -927,6 +1026,7 @@ export const seedData = {
       filter: "NI",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark101: {
@@ -936,6 +1036,7 @@ export const seedData = {
       filter: "Manned",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark102: {
@@ -945,6 +1046,7 @@ export const seedData = {
       filter: "Manned",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark103: {
@@ -954,6 +1056,7 @@ export const seedData = {
       filter: "Manned",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark104: {
@@ -963,6 +1066,7 @@ export const seedData = {
       filter: "Manned",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark105: {
@@ -972,6 +1076,7 @@ export const seedData = {
       filter: "Manned",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       userId: "->users.bernard",
+      categoryName: "Weather Stations",
       categoryId: "->categories.category1",
     },
     placemark106: {
@@ -981,6 +1086,7 @@ export const seedData = {
       desc: "I visted Galway in 2010, what a lovely time I had, did you know the Population is 72,729",
       filter: "2010",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark107: {
@@ -990,6 +1096,7 @@ export const seedData = {
       desc: "I visted Mullingar in 2012, what a lovely time I had, did you know the Population is 18,416",
       filter: "2012",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark108: {
@@ -999,6 +1106,7 @@ export const seedData = {
       desc: "I visted Dungarvan in 2014, what a lovely time I had, did you know the Population is 8,362",
       filter: "2014",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark109: {
@@ -1008,6 +1116,7 @@ export const seedData = {
       desc: "I visted Youghal in 2016, what a lovely time I had, did you know the Population is 6,785",
       filter: "2016",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark110: {
@@ -1017,6 +1126,7 @@ export const seedData = {
       desc: "I visted Bray in 2010, what a lovely time I had, did you know the Population is 31,901",
       filter: "2010",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark111: {
@@ -1026,6 +1136,7 @@ export const seedData = {
       desc: "I visted Sligo in 2012, what a lovely time I had, did you know the Population is 19,402",
       filter: "2012",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark112: {
@@ -1035,6 +1146,7 @@ export const seedData = {
       desc: "I visted Clondalkin in 2014, what a lovely time I had, did you know the Population is 43,879",
       filter: "2014",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark113: {
@@ -1044,6 +1156,7 @@ export const seedData = {
       desc: "I visted Gorey in 2016, what a lovely time I had, did you know the Population is 7,193",
       filter: "2016",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark114: {
@@ -1053,6 +1166,7 @@ export const seedData = {
       desc: "I visted Wicklow in 2010, what a lovely time I had, did you know the Population is 10,070",
       filter: "2010",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark115: {
@@ -1062,6 +1176,7 @@ export const seedData = {
       desc: "I visted Carlow in 2012, what a lovely time I had, did you know the Population is 20,724",
       filter: "2012",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark116: {
@@ -1071,6 +1186,7 @@ export const seedData = {
       desc: "I visted Stillorgan in 2014, what a lovely time I had, did you know the Population is 16,018",
       filter: "2014",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark117: {
@@ -1080,6 +1196,7 @@ export const seedData = {
       desc: "I visted Westport in 2016, what a lovely time I had, did you know the Population is 5,475",
       filter: "2016",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
     placemark118: {
@@ -1089,6 +1206,7 @@ export const seedData = {
       desc: "I visted Bandon in 2018, what a lovely time I had, did you know the Population is 5,822",
       filter: "2018",
       userId: "->users.bernard",
+      categoryName: "Places I have visited in Ireland",
       categoryId: "->categories.category2",
     },
   },
