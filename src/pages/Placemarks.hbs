@@ -1,0 +1,9 @@
+{{> TitleBar}}
+{{> MainNavigator active="dashboard" }}
+  {{#if addPM}}
+    {{> AddPlacemark}}
+  {{else if editPM}}
+    {{> EditPlacemark}}
+  {{else}}
+    {{> ListPlacemarks}}
+  {{/if}}
