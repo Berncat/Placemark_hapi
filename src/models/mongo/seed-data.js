@@ -4,7 +4,7 @@ export const seedData = {
     bernard: {
       firstName: "Bernard",
       lastName: "Cattigan",
-      email: "b.cattigan@placemark.ie",
+      email: "20095670@mail.wit.ie",
       password: "secret123",
     },
     admin: {

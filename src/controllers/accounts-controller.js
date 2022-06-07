@@ -45,6 +45,27 @@ export const accountsController = {
       return h.redirect("/");
     },
   },
+  oauth: {
+    auth: "google",
+    handler: async function (request, h) {
+      if (request.auth.isAuthenticated) {
+        const oauthUser = {
+          firstName: request.auth.credentials.profile.name.given_name,
+          lastName: request.auth.credentials.profile.name.family_name,
+          email: request.auth.credentials.profile.email,
+          password: request.auth.credentials.profile.name.given_name,
+        };
+        const user = await db.userStore.getUserByEmail(oauthUser.email);
+        if (!user) {
+          await db.userStore.addUser(oauthUser);
+        }
+        const checkUser = await db.userStore.getUserByEmail(oauthUser.email);
+        request.cookieAuth.set({ id: checkUser._id });
+        return h.redirect("/dashboard");
+      }
+      return h.redirect("/login");
+    },
+  },
 
   async validate(request, session) {
     const user = await db.userStore.getUserById(session.id);

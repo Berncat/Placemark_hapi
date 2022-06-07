@@ -2,6 +2,7 @@ import Hapi from "@hapi/hapi";
 import Inert from "@hapi/inert";
 import Vision from "@hapi/vision";
 import Cookie from "@hapi/cookie";
+import Bell from "@hapi/bell";
 import Handlebars from "handlebars";
 import dotenv from "dotenv";
 import path from "path";
@@ -31,6 +32,7 @@ async function init() {
   await server.register(Vision);
   await server.register(Cookie);
   await server.register(jwt);
+  await server.register(Bell);
 
   server.views({
     engines: {
@@ -52,6 +54,14 @@ async function init() {
     },
     redirectTo: "/",
     validateFunc: accountsController.validate,
+  });
+
+  server.auth.strategy("google", "bell", {
+    provider: "google",
+    password: "cookie_encryption_password_secure",
+    isSecure: false,
+    clientId: "485230697302-8tjlmd4ec248dh4jdt6gb9dkjnj571or.apps.googleusercontent.com",
+    clientSecret: "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",
   });
 
   server.auth.strategy("jwt", "jwt", {
